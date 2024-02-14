@@ -2,6 +2,15 @@ import  Logo from "./assets/dashboard logo.png"
 import  sun from "./assets/brightness 1.svg"
 import  moon from "./assets/moon 1.svg"
 import MenuCard from "./MenuCard"
+import dashboard from "./assets/category.png"
+import records from "./assets/trend-up.png"
+import profiles from "./assets/profile-2user.png"
+import settings from "./assets/discount-shape.png"
+import notice from "./assets/info-circle.png"
+import box from "./assets/box.png"
+import arrow from "./assets/arrow-right.png"
+import mainSettings  from "./assets/setting-2.png"
+import logout from "./assets/logout.png"
 // import data from "./Data"
 
 function menu() {
@@ -10,22 +19,22 @@ function menu() {
         <div className=" flex flex-col items-start md:items-center pt-5 ">
           <img className="w-10 h-10" src={Logo} alt="" />
           <MenuCard
-            img="./src/assets/category.png"
+            img={dashboard}
           />
           <MenuCard
-            img="./src/assets/trend-up.png"
+            img={records}
           />
           <MenuCard
-            img="./src/assets/profile-2user.png"
+            img={profiles}
           />
           <MenuCard
-            img="./src/assets/box.png"
+            img={box}
           />
           <MenuCard
-            img="./src/assets/discount-shape.png"
+            img={settings}
           />
           <MenuCard
-            img="./src/assets/info-circle.png"
+            img={notice}
           />
           <div className="bg-white w-11 h-20 md:flex flex-col items-center rounded-3xl hidden mx-5 md:mx-5">
               <div className="w-9 h-9 mt-1 rounded-full grid place-items-center bg-green-400">
@@ -38,13 +47,13 @@ function menu() {
         </div>
         <div>
           <MenuCard
-            img="./src/assets/arrow-right.png"
+            img={arrow}
           />
           <MenuCard
-            img="./src/assets/setting-2.png"
+            img={mainSettings}
           />
           <MenuCard
-            img="./src/assets/logout.png"
+            img={logout}
           />
         </div>
       </div>
