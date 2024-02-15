@@ -17,7 +17,7 @@ function barChart({chartData}) {
                     </div>
                 </div>
             </div>
-            <Bar height={375}
+            <Bar 
                 data={chartData}
             />
         </div>
