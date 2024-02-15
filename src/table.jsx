@@ -6,7 +6,7 @@ function table() {
         return(
             <TableCard
             key = {data.key}
-            img={`../src/assets/${data.img}`}
+            img={data.img}
             name={data.id}
             amount={data.amount}
             status={data.status}

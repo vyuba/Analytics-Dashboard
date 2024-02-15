@@ -4,12 +4,17 @@ import ArrowDown from "./assets/Arrow - Down 2.svg"
 import Calendar from "./assets/calendar.svg"
 import Notification from "./assets/bell.svg"
 import SearchIcon from "./assets/Icon - Search.svg"
+import { useState } from "react"
 function header() {
-
+ const [menuIsOpen, setmenuIsOpen] = useState(false);
+  const toggleMenu = ()=>{
+    console.log('clicked')
+    setmenuIsOpen(prev => !prev)
+  }
   return (
     <>
-    <nav className="w-full h-[88px] bg-[#FAFAFA] border border-[#E5EAEF] flex items-center justify-between px-4">
-          <div className="background md:hidden">
+    <nav className={`w-full h-[88px] bg-[#FAFAFA] border border-[#E5EAEF] flex items-center justify-between px-4`}>
+          <div className={`background md:hidden`} onClick={toggleMenu}>
             <button className="menu__icon">
               <span></span>
               <span></span>

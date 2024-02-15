@@ -4,7 +4,7 @@ function tableCard(props) {
         <>
              <tr className="border-y text-base">
                     <td className="py-2 flex items-center gap-1 font-medium">
-                    <img src={props.img} alt="" />
+                    <img src={`./assets/${props.img}`} alt="" />
                     {props.name}</td>
                     <td className="py-2 text-[#737373]">{props.date}</td>
                     <td className="py-2 font-medium">${props.amount}</td>
