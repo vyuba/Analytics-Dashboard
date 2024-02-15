@@ -2,7 +2,7 @@
 
 function menuCard(props) {
     return(
-        <div className="w-full border-y rounded-2xl md:border-none px-5 md:px-5 hover:bg-green-400 md:hover:bg-transparent py-5 md:py-0 my-0 md:my-5">
+        <div className="w-full rounded-2xl md:border-none px-5 md:px-5 md:hover:bg-transparent py-5 md:py-0 my-0 md:my-5">
             <li className="w-full flex list-none items-center  md:justify-center">
             <img className="w-7 h-7" src={props.img} alt="" />
             </li>

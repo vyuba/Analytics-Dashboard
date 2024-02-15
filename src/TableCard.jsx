@@ -2,14 +2,14 @@
 function tableCard(props) {
     return(
         <>
-             <tr className="border-y text-base">
-                    <td className="py-2 flex items-center gap-1 font-medium">
+             <tr className="dark:border-y-[#122026] border-y text-base">
+                    <td className="py-2 flex items-center gap-1 dark:text-[#c8cddd] font-medium">
                     <img src={`/images/${props.img}`} alt="" />
                     {props.name}</td>
-                    <td className="py-2 text-[#737373]">{props.date}</td>
-                    <td className="py-2 font-medium">${props.amount}</td>
+                    <td className="py-2 text-[#737373] dark:text-[#adadad]">{props.date}</td>
+                    <td className="py-2 font-medium dark:text-[#e9e6f5]">${props.amount}</td>
                     <td className="py-2">{props.status}</td>
-                    <td className="py-2 flex items-center justify-center">
+                    <td className="py-2 flex items-center dark:text-[#e9e6f5] justify-center">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 11.8334C5.93333 11.8334 5.87333 11.82 5.80667 11.7934C5.62 11.72 5.5 11.5334 5.5 11.3334V7.33337C5.5 7.06004 5.72667 6.83337 6 6.83337C6.27333 6.83337 6.5 7.06004 6.5 7.33337V10.1267L6.98 9.64671C7.17333 9.45337 7.49333 9.45337 7.68667 9.64671C7.88 9.84004 7.88 10.16 7.68667 10.3534L6.35333 11.6867C6.26 11.78 6.12667 11.8334 6 11.8334Z" fill="#292D32"/>
                             <path d="M5.99964 11.8334C5.87297 11.8334 5.7463 11.7867 5.6463 11.6867L4.31297 10.3534C4.11964 10.16 4.11964 9.84004 4.31297 9.64671C4.5063 9.45338 4.8263 9.45338 5.01964 9.64671L6.35297 10.98C6.5463 11.1734 6.5463 11.4934 6.35297 11.6867C6.25297 11.7867 6.1263 11.8334 5.99964 11.8334Z" fill="#292D32"/>
